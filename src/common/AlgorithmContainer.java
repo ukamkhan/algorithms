@@ -38,12 +38,12 @@ public class AlgorithmContainer {
 	}
 	
 	/**
-	 * Get first non repeating character
+	 * Get first non repeating character from the given string
 	 * 
 	 * @param arr given string
 	 * @return first non repeating character
 	 */
-	public static char getNonRepIndexOrChar(String arr){
+	public static char getNonRepeatingCharacter(String arr){
 		
  		HashMap<Character, Integer> map = new HashMap<Character, Integer>();
  		// create signature
@@ -58,7 +58,6 @@ public class AlgorithmContainer {
  		}
 		Character nonrep = null;
 		Set<Character> keys = map.keySet();
-		// but we want the index in the original array or string . 
 		for(Character key: keys){
 			int count = map.get(key);
 			if( count == 1) {
