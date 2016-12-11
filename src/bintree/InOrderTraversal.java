@@ -25,7 +25,6 @@ public class InOrderTraversal {
 		if(node.right() != null) {
 			successor = leftMostChild(node);
 		} else if(node.right() == null) {
-			
 			// go up until current is the left child
 			// this covers both cases, current node is left child or right child.
 			// for left case we will never go in while
