@@ -23,7 +23,7 @@ public class InOrderTraversal {
 		TreeNode successor = null;
 		
 		if(node.right() != null) {
-			successor = leftMostChild(node);
+			successor = leftMostChild(node.right());
 		} else if(node.right() == null) {
 			// go up until current is the left child
 			// this covers both cases, current node is left child or right child.
